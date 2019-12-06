@@ -6,27 +6,27 @@
 </head>
 
 <body>
-    <div id="app">
+    <div class="corpo" id="app">
         <button class="botao"> Criar Quadrado </button>
     </div>
-    <div id="box" class="box">
-
-    </div>
-
 
     <script type="text/javascript">
         var buttonElement = document.querySelector("div#app button.botao")
-        var boxElement = document.querySelector(" div#box ");
 
-        console.log(boxElement.getBoundingClientRect());
 
         buttonElement.onclick = function() {
-            boxElement.style.width = 100;
-            boxElement.style.height = 100;
-            boxElement.style.backgroundColor = "red";
+            var divAtual = document.querySelector("div#app");
+
+            var div = document.createElement('div');
+            div.setAttribute('class', 'box');
+            div.style.width = 100;
+            div.style.height = 100;
+            div.style.backgroundColor = "red";
+
+            divAtual.appendChild(div);
         }
     </script>
 
 </body>
 
-</html>
+</html
