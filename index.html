@@ -13,15 +13,25 @@
     <script type="text/javascript">
         var buttonElement = document.querySelector("div#app button.botao")
 
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
 
         buttonElement.onclick = function() {
+            var newColor = getRandomColor(); // #E943F0
             var divAtual = document.querySelector("div#app");
 
             var div = document.createElement('div');
             div.setAttribute('class', 'box');
             div.style.width = 100;
             div.style.height = 100;
-            div.style.backgroundColor = "red";
+            div.style.backgroundColor = newColor;
 
             divAtual.appendChild(div);
         }
