@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title>Learning JavaScript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.write("Exercicio Módulo 1");
+
+        //Questão 1
+        /* 
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        }
+
+
+        function exibeInf(information) {
+            console.log('O usuário mora em ' + information.cidade + ' / ' + information.uf + ', no bairro ' + information.bairro + ', na rua "' + information.rua + '" com num ' + information.numero);
+        }
+
+        exibeInf(endereco);
+        */
+        /*
+        //Questão 2
+        //Funçao que exibe todos os numeros pares entre o intervalo x y
+        function pares(x, y) {
+            for (var i = x + 1; i < y; i++) {
+                if (i % 2 == 0) {
+                    console.log(i);
+                }
+            }
+        }
+
+        pares(32, 321);
+
+        */
+
+        /*
+        //Questão 3
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        //Função indexOf retorna o indice
+        function verificaHabilidade(skills) {
+            var resultado = skills.indexOf("ReactJS");
+
+            return resultado != -1 ? true : false;
+        }
+
+        var resultado = verificaHabilidade(skills);
+        console.log(resultado);
+
+        */
+        /*
+        //Questao 4
+
+        function experiencia(anosDeEstudo) {
+            if (anosDeEstudo < 0) {
+                return "ERRO";
+            } else if (anosDeEstudo > 0 && anosDeEstudo <= 1) {
+                return "Iniciante";
+            } else if (anosDeEstudo <= 3) {
+                return "Intermediario";
+            } else if (anosDeEstudo <= 6) {
+                return "Avançado";
+            } else {
+                return "Jedi Master";
+            }
+        }
+
+        var anosEstudo = 3.5;
+        console.log(experiencia(anosEstudo));
+        */
+
+        /*
+        //Questao 5
+
+        var usuarios = [{
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+        }, {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }];
+
+        //resultado = (usuarios[0].habilidades).join(" ,");
+        //console.log(resultado);
+        // Exemplo usando for of, que acessa o conteudo do objeto
+        function exibeOfInfo(usuarios) {
+            for (let info of usuarios) {
+                resultado = "O " + (info.nome) + " possui as habilidades: " + (info.habilidades).join(", ");
+                console.log(resultado);
+
+
+            }
+        }
+
+        // Exemplo usando for in, que acessa o indice do objeto
+        function exibeInInfo(usuarios) {
+            for (let info in usuarios) {
+                resultado = "O " + (usuarios[info].nome) + " possui as habilidades: " + (usuarios[info].habilidades).join(", ");
+                console.log(resultado);
+
+
+            }
+        }
+
+
+        exibeOfInfo(usuarios);
+        */
+    </script>
+
+</body>
+
+</html
