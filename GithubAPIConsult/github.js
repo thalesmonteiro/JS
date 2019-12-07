@@ -4,13 +4,14 @@ function Adicionar() {
     inputElement.value = "";
     inputElement.focus();
 
+    var listUL = document.querySelector('ul');
+    listUL.innerHTML = "Loading...";
     axios.get('https://api.github.com/users/' + inputValue + '/repos')
         .then(function(response) {
             console.log(response);
             //select the div
             div = document.getElementById('app');
             //insert the text into the div
-            div.style.position = 'absolute';
             div.innerHTML = "<br> Repositories of " + inputValue + "</br>";
 
             var listUL = document.querySelector('ul');
@@ -28,7 +29,8 @@ function Adicionar() {
 
         })
         .catch(function(error) {
-            console.warn(error);
+            listUL.innerHTML = " ";
+            alert("User not found");
         });
 
 }
