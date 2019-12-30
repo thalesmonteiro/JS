@@ -1,0 +1,8 @@
+yarn init    ; inicia o yarn e cria o package.json que guarda as dependências da aplicação
+
+yarn add @babel/cli   ;permite que usemos a interface de linha de comando do babel
+
+yarn add @babel/preset-env  
+
+yarn add @babel/core
+
